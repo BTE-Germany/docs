@@ -1,0 +1,13 @@
+{
+    "title": "BTE Germany Docs",
+    "description": "The official content source",
+    "icon": "Pencil",
+    "root": true,
+    "pages": [
+        "---Discord-Server---",
+        "report",
+        "---Modpack---",
+        "install-java",
+        "start-installer"
+    ]
+}

@@ -1,0 +1,40 @@
+---
+title: Ich kann den Modpack Installer nicht starten.
+description: Es kann mehrere Gründe geben, weshalb du den Installer nicht ausführen kannst. Hier sind einige Schritte, die du unternehmen kannst, um das Problem zu lösen.
+icon: Bug
+---
+
+## Überprüfe, ob Java auf deinem System installiert ist.
+
+Öffne mit der Tastenkombination `WIN` + `R` das "Ausführen"-Fenster. Gebe hier in das Eingabefeld `cmd` ein und drücke Enter.
+
+![](https://d4rdaoypx775z.cloudfront.net/uploads/2026/02/Cofimage.png)
+
+Es sollte sich nun ein schwarzes Fenster öffnen. Hier gibst du `java --version` ein und drückst Enter.
+Sollte die Fehlermeldung "_Der Befehl "java" ist entweder falsch geschrieben oder konnte nicht gefunden werden._" angezeigt werden, 
+musst du zuerst [Java installieren](install-java). Sollte eine andere Fehlermeldung angezeigt werden, versuche Java zuerst zu deinstallieren und dann erneut zu installieren.
+Ist alles korrekt installiert, sollte dir deine aktuelle Java-Version angezeigt werden.
+
+![](https://d4rdaoypx775z.cloudfront.net/uploads/2026/02/o08image.png)
+
+<Callout type="warn" title="Hinweis">
+Deine Java-Version sollte **höher oder gleich 17.0.0** sein. Solltest du eine ältere Version verwenden, kann es zu Problemen bei der Installation des Modpacks kommen. Bitte deinstalliere deine Java-Installation und folge unserer Anleitung um eine neuere Java-Version zu installieren.
+</Callout>
+
+## Versuche den Installer mithilfe der Eingabeaufforderung zu öffnen
+
+Öffne den Ordner, in dem du den Installer gespeichert hast (vermutlich deinen Download-Ordner) im Windows Explorer. Gebe hier wie im Bild gezeigt in die Adresszeile `cmd` ein und drücke Enter, um die Eingabeaufforderung im aktuellen Ordner zu öffnen.
+
+<Callout type="info" title="Tipp">
+Eventuell sieht der Windows Explorer bei dir ein wenig anders aus, wenn du noch nicht Windows 11 verwendest. Das ändert aber nichts an der Funktionalität und diese Anleitung sollte dennoch funktionieren.
+</Callout>
+
+![](https://d4rdaoypx775z.cloudfront.net/uploads/2026/02/Cb7image.png)
+
+Es sollte sich die Eingabeaufforderung öffnen. Hier musst du folgenden Befehl eingeben: `java -jar <Dateiname>.jar`.
+Solltest du den Dateinamen des Installers nicht verändert haben, kannst du folgenden Befehl einfach einfügen: `java -jar BTE-Germany-Installer.jar`.
+
+![](https://d4rdaoypx775z.cloudfront.net/uploads/2026/02/dccimage.png)
+
+Solltest du weiterhin mit dem Installer Probleme haben, sende uns bitte einen **Screenshot des CMD-Fensters über den Support Bot**. Wir versuchen dir dann so gut es geht weiterzuhelfen :D
+
