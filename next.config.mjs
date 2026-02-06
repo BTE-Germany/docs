@@ -4,6 +4,7 @@ const withMDX = createMDX();
 
 /** @type {import('next').NextConfig} */
 const config = {
+  output: 'standalone',
   reactStrictMode: true,
   images: {
     domains: ['d4rdaoypx775z.cloudfront.net'],
