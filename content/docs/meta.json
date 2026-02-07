@@ -8,6 +8,8 @@
         "report",
         "---Modpack---",
         "install-java",
-        "start-installer"
+        "start-installer",
+        "---Staffteam---",
+        "staff-applications"
     ]
 }
