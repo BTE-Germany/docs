@@ -1,0 +1,68 @@
+---
+title: Visitor-Befehle
+description: Eine Übersicht über alle Befehle, die dir ab Visitor zur Verfügung stehen.
+icon: AppWindow
+---
+
+Hier findest du eine Übersicht aller Befehle, die du aktuell ab **Visitor** verwenden kannst.
+
+> [!INFO]
+> Viele Befehle aus den **[Builder Commands](builder-befehle)** stehen auch Visitorn zur Verfügung, solange sie auf ihrem eigenen Plot im PlotSystem bauen.
+
+## Allgemeine Befehle
+
+| Befehl                       | Alias            | Beschreibung                                                                               |
+| ---------------------------- | ---------------- | ------------------------------------------------------------------------------------------ |
+| `/msg <Spieler> <Nachricht>` | `/whisper`, `/w` | Sendet einem Spieler eine private Nachricht.                                               |
+| `/server <Server>`           | —                | Verbindet dich mit dem angegebenen Server.                                                 |
+| `/l`                         | `/lobby`         | Teleportiert dich zurück zur Lobby.                                                        |
+| `/event`                     | —                | Teleportiert dich zur Eventfläche. Dieser Befehl ist nur während aktiver Events verfügbar. |
+| `/wedisplay toggle`          | —                | Aktiviert oder deaktiviert die WorldEdit-Anzeige.                                          |
+
+## Plot-Befehle
+
+Mit diesen Befehlen kannst du deine Plots verwalten und mit ihnen interagieren.
+
+### Allgemeine Plot-Befehle
+
+| Befehl             | Alias                   | Beschreibung                                                                                                   |
+| ------------------ | ----------------------- | -------------------------------------------------------------------------------------------------------------- |
+| `/companion`       | —                       | Öffnet das Companion-Menü. Dort kannst du unter anderem Stadtprojekte ansehen und laufende Projekte verwalten. |
+| `/plots`           | `/plotserver`           | Zeigt deine eigenen Plots an.                                                                                  |
+| `/plots <Spieler>` | `/plotserver <Spieler>` | Zeigt alle Plots des angegebenen Spielers an.                                                                  |
+| `/tutorial`        | —                       | Öffnet das Tutorial-Menü.                                                                                      |
+| `/cancelchat`      | —                       | Bricht die aktuelle Chat-Eingabe ab.                                                                           |
+
+### `/plot`-Befehle 2
+
+| Befehl                       | Alias                   | Beschreibung                                                                              |
+| ---------------------------- | ----------------------- | ----------------------------------------------------------------------------------------- |
+| `/plot help`                 | —                       | Zeigt alle verfügbaren Plot-Befehle an.                                                   |
+| `/plot links`                | —                       | Zeigt die Links des Plots an, auf dem du dich aktuell befindest.                          |
+| `/plot teleport <ID>`        | `/plot tp <ID>`         | Teleportiert dich zum angegebenen Plot.                                                   |
+| `/plot submit`               | `/plot submit <ID>`     | Reicht einen noch nicht fertiggestellten Plot zur Überprüfung ein.                        |
+| `/plot abandon`              | `/plot abandon <ID>`    | Gibt einen noch nicht fertiggestellten Plot auf.                                          |
+| `/plot feedback`             | `/plot feedback <ID>`   | Zeigt die Bewertungsinformationen eines Plots an, darunter Punkte, Feedback und Reviewer. |
+| `/plot invite <Accept/Deny>` | —                       | Akzeptiert oder lehnt eine eingehende Plot-Einladung ab.                                  |
+| `/plot undosubmit`           | `/plot undoSubmit <ID>` | Zieht die Einreichung eines noch nicht bewerteten Plots zurück.                           |
+| `/plot members`              | —                       | Öffnet das Menü zur Verwaltung der Plot-Mitglieder.                                       |
+
+## Teleportation
+
+| Befehl                             | Alias            | Beschreibung                                                                     |
+| ---------------------------------- | ---------------- | -------------------------------------------------------------------------------- |
+| `/tpa <Spieler>`                   | —                | Sendet einem Spieler eine Teleportationsanfrage.                                 |
+| `/tpaccept`                        | —                | Akzeptiert eine eingehende Teleportationsanfrage.                                |
+| `/tpdeny`                          | —                | Lehnt eine eingehende Teleportationsanfrage ab.                                  |
+| `/tpback`                          | —                | Teleportiert dich zu deiner vorherigen Position zurück.                          |
+| `/tpll <Breitengrad> <Längengrad>` | —                | Teleportiert dich zu geografischen Koordinaten.                                  |
+| `/warp <Stadt>`                    | `/warps <Stadt>` | Teleportiert dich zur angegebenen Stadt beziehungsweise zum entsprechenden Warp. |
+| `/spawn`                           | —                | Teleportiert dich zum Spawn.                                                     |
+| `/where`                           | —                | Zeigt Informationen zu deiner aktuellen Position an.                             |
+
+## Partychat
+
+| Befehl                | Alias        | Beschreibung               |
+|-----------------------| ------------ |----------------------------|
+| `/channel partychat`  | `/partychat` | Wechselt in den Partychat. |
+| `/party <subcommand>` | —            | Verwaltet deine party.     |

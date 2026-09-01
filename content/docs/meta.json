@@ -4,6 +4,9 @@
     "icon": "Pencil",
     "root": true,
     "pages": [
+        "---Minecraft-Server---",
+        "visitor-befehle",
+        "builder-befehle",
         "---Discord-Server---",
         "report",
         "---Modpack---",
