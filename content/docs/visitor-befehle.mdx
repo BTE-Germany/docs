@@ -15,9 +15,11 @@ Hier findest du eine Übersicht aller Befehle, die du aktuell ab **Visitor** ver
 | ---------------------------- | ---------------- | ------------------------------------------------------------------------------------------ |
 | `/msg <Spieler> <Nachricht>` | `/whisper`, `/w` | Sendet einem Spieler eine private Nachricht.                                               |
 | `/server <Server>`           | —                | Verbindet dich mit dem angegebenen Server.                                                 |
-| `/l`                         | `/lobby`         | Teleportiert dich zurück zur Lobby.                                                        |
+| `/bl <Bundesland/Abk.>`      | `/bundesland`    | Verbindet dich mit dem Server des angegebenen Bundeslandes.                                |
+| `/l`                         | `/lobby`, `/hub` | Teleportiert dich zurück zur Lobby.                                                        |
 | `/event`                     | —                | Teleportiert dich zur Eventfläche. Dieser Befehl ist nur während aktiver Events verfügbar. |
 | `/wedisplay toggle`          | —                | Aktiviert oder deaktiviert die WorldEdit-Anzeige.                                          |
+| `/speed <0-5, n>`            | —                | Ändert deine Bewegungsgeschwindigkeit.                                                     |
 
 ## Plot-Befehle
 
@@ -49,16 +51,17 @@ Mit diesen Befehlen kannst du deine Plots verwalten und mit ihnen interagieren.
 
 ## Teleportation
 
-| Befehl                             | Alias            | Beschreibung                                                                     |
-| ---------------------------------- | ---------------- | -------------------------------------------------------------------------------- |
-| `/tpa <Spieler>`                   | —                | Sendet einem Spieler eine Teleportationsanfrage.                                 |
-| `/tpaccept`                        | —                | Akzeptiert eine eingehende Teleportationsanfrage.                                |
-| `/tpdeny`                          | —                | Lehnt eine eingehende Teleportationsanfrage ab.                                  |
-| `/tpback`                          | —                | Teleportiert dich zu deiner vorherigen Position zurück.                          |
-| `/tpll <Breitengrad> <Längengrad>` | —                | Teleportiert dich zu geografischen Koordinaten.                                  |
-| `/warp <Stadt>`                    | `/warps <Stadt>` | Teleportiert dich zur angegebenen Stadt beziehungsweise zum entsprechenden Warp. |
-| `/spawn`                           | —                | Teleportiert dich zum Spawn.                                                     |
-| `/where`                           | —                | Zeigt Informationen zu deiner aktuellen Position an.                             |
+| Befehl                             | Alias                         | Beschreibung                                                                     |
+| ---------------------------------- | ----------------------------- | -------------------------------------------------------------------------------- |
+| `/tpa <Spieler>`                   | —                             | Sendet einem Spieler eine Teleportationsanfrage.                                 |
+| `/tpaccept`                        | `/tpaaccept`                  | Akzeptiert eine eingehende Teleportationsanfrage.                                |
+| `/tpadeny`                         | —                             | Lehnt eine eingehende Teleportationsanfrage ab.                                  |
+| `/tpacancel`                       | —                             | Bricht eine gesendete Teleportationsanfrage ab.                                  |
+| `/tpback`                          | `/back`                       | Teleportiert dich zu deiner vorherigen Position zurück.                          |
+| `/tpll <Breitengrad> <Längengrad>` | `/tpl`                        | Teleportiert dich zu geografischen Koordinaten.                                  |
+| `/warp <Stadt/Name>`               | `/warps`, `/nwarp`, `/nwarps` | Teleportiert dich zur angegebenen Stadt beziehungsweise zum entsprechenden Warp. |
+| `/spawn`                           | —                             | Teleportiert dich zum Spawn.                                                     |
+| `/where`                           | —                             | Zeigt Informationen zu deiner aktuellen Position an.                             |
 
 ## Partychat
 

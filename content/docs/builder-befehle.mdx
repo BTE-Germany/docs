@@ -111,14 +111,24 @@ Dazu gehören unter anderem:
 | `/accountlink` | — | Verknüpft deinen Minecraft-Account mit dem vorgesehenen Account-System. |
 | `/speed` | — | Ändert deine Bewegungs- beziehungsweise Fluggeschwindigkeit. |
 | `/gamemode` | — | Ermöglicht den Wechsel des Spielmodus im erlaubten Rahmen. |
+| `/dnd enable <Ausnahme1> <Ausnahme...>` | `/donotdisturb`, `/rec`, `/recording` | Dir werden keine Spieler (nur die Ausnahmen) angezeigt. |
+| `/dnd disable` | s.o. | Spieler werden wieder normal angezeigt. |
 
 ## WorldEdit-Zusatzbefehle
 
-| Befehl | Beschreibung |
-| --- | --- |
-| `//dell <Anzahl>` | Entfernt die letzten angegebenen Punkte aus der WorldEdit-Auswahl. |
-| `//side` | Führt die entsprechende WorldEdit-Seitenfunktion aus. |
-| `//cover` | Verwendet die WorldEdit-Cover-Funktion. |
+| Befehl | Alias | Beschreibung |
+| --- | --- | --- |
+| `//dell <Anzahl>` | — | Entfernt die letzten angegebenen Punkte aus der WorldEdit-Auswahl. |
+| `//side <Block-ID> <Block-ID> <Direction[n,e,s,w]> <ignoreSameBlocks[y,n]> <Mask1> <Mask...>` | — | Platziert Blöcke des zweiten Typs an Blöcken des ersten Typs auf der der Richtung entsprechenden Seite. IgnoreSameBlocks=No: Angrenzende Blöcke werden nur ersetzt, wenn sie nicht dem erste Blocktyp entsprechen. |
+| `//cleanup` | — | Entfernt pflanzliche Blöcke im gewählten Bereich. |
+| `//cover` | — | Ersetzt Luft direkt hinter Fenstern mit Blöcken um sie abzudunkeln. |
+| `//rail <Block-ID> <Wall-ID-railway-sleepers> <overhead-line[n,glass,tram_single,tram_double]> <rails-in-ground[y,n]>` | — | Generiert Schienen in Blickrichtung des Spielers entlang des angegebenen Blocks. rails-in-ground=y: Schwellen werden nicht generiert. |
+| `//connect <Block-ID> [open/closed]` | — | Verbindet jeweils zwei nacheinander ausgewählte Blöcke mit einer geraden Linie. open: Der letzte Block wird nicht mit dem als erstes gewählten Block verbunden. |
+| `//surfaceline <Block-ID> [ground/top]` | `/sline` | Zieht eine Linie, die dem Terrain folgt. top: Linie wird auf statt im Boden platziert. |
+| `//surfaceconnect <Block-ID> [open/closed]` | `/sconnect` | Siehe //connect, nur, dass die Verbindungslinien dem Terrain folgen. |
+| `//skew <Amount> <Direction[n,e,s,w]> <Side[n,e,s,w]>` | — | Verschiebt die gewählte Seite der Selection in die gewählte Richtung. Die andere Seite wird nicht verschoben. Blöcke dazwischen werden entsprechend einer Verbindungslinie verschoben. |
+| `//curb <marker> <material>` | — | Ersetzt die Marker-Blöcke mit Treppen (am Rand) oder Blöcken (flächig) entsprechend des Materials. |
+| `//arch <block> <height> <up/down>` | — | Erstellt einen Bogen nach oben oder unten zwischen zwei Blöcken. |
 
 > [!TIP]
 > Mit der entsprechenden Berechtigung kannst du außerdem **F3 + N** verwenden, um zwischen Creative- und Spectator-Modus zu wechseln.
